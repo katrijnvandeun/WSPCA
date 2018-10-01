@@ -1,1 +1,5 @@
-because new file is needed in order to create a folder...
+The simulation study can be replicated by first creating the data (revision_GenerateDatavPunif.m) and then analyzing these data using the 
+matlab script (revision_analysis_simulateddata_Punif.m). For the SPC analysis as implemented in the R package and for creating the box plots
+in the paper, we refer to the R folder.
+
+The analysis of influenza data can be obtained by running the script (script_AnalysisInfluenzaData).
