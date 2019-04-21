@@ -6,6 +6,7 @@ This github repository contains all matlab and R code and functions that support
 ## 1. CREATE DATA
   
 -Gene expression data: Run the R scripts *R/SCRIPT_ProcessingGSE29614_2007.R* and *R/SCRIPT_ProcessingGSE29617_2008.R*. This retrieves the expression data from the online database and creates RMA pre-processed expression matrices for both seasons. The resulting pre-processed gene expression data are stored in *DATA/GSE29614_rma.txt* (2008 season) and *DATA/GSE29617_rma.txt* (2007 season). Besides, phenotype data with subject ids and the number of days after vaccination are created (*DATA/GSE29614_pdata.txt* and *DATA/GSE29617_pdata.txt*) along with a table containing the variance parameters in the two-component model resulting from the GESTr package (*DATA/GSE29614__RLparsD0.txt* and *DATA/GSE29617__RLparsD0.txt*). 
+
 -Antibody titers:  These can be created also from the R scripts *R/SCRIPT_ProcessingGSE29614_2007.R* and *R/SCRIPT_ProcessingGSE29617_2008.R*. In these scripts the antibody titers are extracted from the CEL files and written to *DATA/GSE29614_titers.txt* (2008 season) and *DATA/GSE29617_titers.txt* (2007 season). 
   
 These files contain the antibody titers for three influenza strains and measured just before and 28 days after vaccination
