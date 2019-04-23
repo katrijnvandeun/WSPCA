@@ -20,14 +20,11 @@ Because we use the baseline-corrected gene expression data obtained three days a
 ## 2. ANALYZE DATA + POST-PROCESS RESULTS
 
 1. Unweighed sparse PCA using the R PMA package: 
-  *R/Script_sgcca_spls.R*
+  *R/script_pma_influenzadata_FINAL.R*
 2. Ordinary PCA, weighted PCA, and weighted sparse PCA using our WSPCA method implemented in MATLAB:  
-  *MATLAB/plot_PCovR.m*: this script requires two external matlab functions: fig.m and exportfig.m
+  *MATLAB/script_AnalysisInfluenzaData.m*: this script requires two external matlab functions: fig.m and exportfig.m
 	Available from: http://www.mathworks.com/matlabcentral/fileexchange/30736 and
 	https://nl.mathworks.com/matlabcentral/fileexchange/727-exportfig
-3. Sparse PCovR using MATLAB  
-  *MATLAB/Script_SPCovRanalysis.m*: Calls different function that implement Algorithm 1 and Algorithm 2.
-
 
 ## 3. ANNOTATION OF SELECTED PROBE SETS
 
