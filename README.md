@@ -14,12 +14,10 @@ These files contain the antibody titers for three influenza strains and measured
 Because we use the baseline-corrected gene expression data obtained three days after vaccination, the day 0 and day 3 data have to be matched on their subject identifiers and the difference scores have to be calculated. Note that the analyses are on the raw data (no centering nor scaling to unit variance). To reproduce these steps, run the following MATLAB scripts.  
 
  a. 2007 sample  
-  * *MATLAB/Script_Preprocessing_2007.m* creates *DATA/DATA2007.mat* and *TIVD3_2007_rev.txt*
-  * *MATLAB/ScriptHAI_TIVD28vsD0_2007.m* creates *TIVtiter2007.m* and *TIVtiter2007.txt*  
+  * *MATLAB/Script_Preprocessing_2007.m* creates *DATA/DATA2007.mat*, *DATA/DATA_D0_2007.mat*, *DATA/DATA_D3_2007.mat*, and *TIVTITER2007.txt*
   
  b. 2008 sample  
-  * *MATLAB/Script_Preprocessing_2008.m* creates *DATA/DATA2008.mat* and *DATA/TIVD3_rev.txt*
-  * *MATLAB/ScriptHAI_TIVD28vsD0_2008.m* creates *DATA/TIVtiter.m* and *DATA/TIVtiter.txt*
+  * *MATLAB/Script_Preprocessing_2008.m* creates *DATA/DATA2008.mat*, *DATA/DATA_D0_2008.mat*, *DATA/DATA_D3_2008.mat*, and *TIVTITER2008.txt*
 
 ## 2. ANALYZE DATA + POST-PROCESS RESULTS
 
