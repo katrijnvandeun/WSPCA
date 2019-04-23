@@ -7,9 +7,7 @@ This github repository contains all matlab and R code and functions that support
   
 -Gene expression data: Run the R scripts *R/SCRIPT_ProcessingGSE29614_2007.R* and *R/SCRIPT_ProcessingGSE29617_2008.R*. This retrieves the expression data from the online database and creates RMA pre-processed expression matrices for both seasons. The resulting pre-processed gene expression data are stored in *DATA/GSE29614_rma.txt* (2008 season) and *DATA/GSE29617_rma.txt* (2007 season). Besides, phenotype data with subject ids and the number of days after vaccination are created (*DATA/GSE29614_pdata.txt* and *DATA/GSE29617_pdata.txt*) along with a table containing the variance parameters in the two-component model resulting from the GESTr package (*DATA/GSE29614__RLparsD0.txt* and *DATA/GSE29617__RLparsD0.txt*). 
 
--Antibody titers:  These can be created also from the R scripts *R/SCRIPT_ProcessingGSE29614_2007.R* and *R/SCRIPT_ProcessingGSE29617_2008.R*. In these scripts the antibody titers are extracted from the CEL files and written to *DATA/GSE29614_titers.txt* (2008 season) and *DATA/GSE29617_titers.txt* (2007 season). 
-  
-These files contain the antibody titers for three influenza strains and measured just before and 28 days after vaccination
+-Antibody titers:  These can be created also from the R scripts *R/SCRIPT_ProcessingGSE29614_2007.R* and *R/SCRIPT_ProcessingGSE29617_2008.R*. In these scripts the antibody titers are extracted from the CEL files and written to *DATA/GSE29614_titers.txt* (2008 season) and *DATA/GSE29617_titers.txt* (2007 season). From these files, the files *DATA/TIVtiters_2007.txt* and *DATA/TIVtiters_2008.txt* have been created by removing the textual descriptions and only retaining the numerical values. These files contain the antibody titers for three influenza strains and measured just before and 28 days after vaccination
 
 Because we use the baseline-corrected gene expression data obtained three days after vaccination, the day 0 and day 3 data have to be matched on their subject identifiers and the difference scores have to be calculated. Note that the analyses are on the raw data (no centering nor scaling to unit variance). To reproduce these steps, run the following MATLAB scripts.  
 
@@ -21,9 +19,9 @@ Because we use the baseline-corrected gene expression data obtained three days a
 
 ## 2. ANALYZE DATA + POST-PROCESS RESULTS
 
-1. PMA (for comparison) using R and the package PMA  
+1. Unweighed sparse PCA using the R PMA package: 
   *R/Script_sgcca_spls.R*
-2. Ordinary PCovR analysis using MATLAB and creation of the Figures 1 & 2 in the paper  
+2. Ordinary PCA, weighted PCA, and weighted sparse PCA using our WSPCA method implemented in MATLAB:  
   *MATLAB/plot_PCovR.m*: this script requires two external matlab functions: fig.m and exportfig.m
 	Available from: http://www.mathworks.com/matlabcentral/fileexchange/30736 and
 	https://nl.mathworks.com/matlabcentral/fileexchange/727-exportfig
