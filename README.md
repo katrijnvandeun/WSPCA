@@ -34,6 +34,6 @@ Annotate the probe-sets with non-zero weights resulting from WSPCA: *R/Annotatio
 
 Generation of the data: *MATLAB/Simulation_GenerateData.m*
 
-Analysis of the data: *MATLAB/Simulation_AnalyzeData.m* for PCA, WPCA, and WSPCA, and for *R/Simulation_AnalyzeData.r* SPCA
+Analysis of the data: *MATLAB/Simulation_AnalyzeData.m* for PCA, WPCA, and WSPCA, and *R/Simulation_AnalyzeData.r* for SPCA
 
 Creation of the boxplots: *R/script_wspca_pma_boxplots_final_Prandom.r*
